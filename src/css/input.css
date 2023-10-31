@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  font-family: 'Alata', sans-serif;
+  font-family: 'Alice', serif;
+  font-family: 'Manrope', sans-serif;
+  font-family: 'Playpen Sans', cursive;
+  font-family: 'Source Sans 3', sans-serif;
+}
