@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2family=Alata&family=Alice&family=Manrope&family=Playpen+Sans:wght@300;400&family=Source+Sans+3:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>dice🎲</title>
+    <script defer src="./src/js/app.js"></script>
+  </head>
+  <body class="bg-[#252434]">
+    <div class="w-full h-screen flex justify-center items-center">
+      <div class="relative flex justify-center items-center">
+        <div
+          id="player--0"
+          class="w-[500px] h-[600px] bg-[#4f5a87] shadow-lg  rounded-l-xl flex flex-col items-center pt-24"
+        >
+          <h1 class="text-3xl font-medium">PLAYER 1</h1>
+          <h2 class="text-[95px] mt-10 text-[#3b3954]">20</h2>
+
+          <div
+            class="bg-[#3b3954] w-60 h-32 mt-16 flex flex-col items-center text-white rounded-xl shadow-xl"
+          >
+            <p class="mt-5">CURRENT</p>
+            <h2 class="text-5xl pt-3 ">0</h2>
+          </div>
+        </div>
+
+        <div
+          id="player--1"
+          class="w-[500px] h-[600px] bg-[#8080a7] shadow-lg  rounded-r-xl flex flex-col items-center pt-24"
+        >
+          <h1 class="text-3xl font-medium">PLAYER 2</h1>
+          <h2 class="text-[95px] mt-10 text-[#3b3954]">20</h2>
+
+          <div
+            class="bg-[#3b3954] w-60 h-32 mt-16 flex flex-col items-center text-white rounded-xl shadow-xl"
+          >
+            <p class="mt-5">CURRENT</p>
+            <h2 class="text-5xl pt-3">0</h2>
+          </div>
+        </div>
+        <div
+          class="absolute w-36 h-36 top-40 left-[42%] shadow-2xl rounded-3xl"
+        >
+          <img src="./public/img/dice (2).png" alt="" class="" />
+        </div>
+      </div>
+
+      <button
+        class="btn btn--new absolute bottom-[78%] z-40 left-[45%] py-2 px-7 rounded-full backdrop-blur-md backdrop-saturate-[100%] bg-[#3b39547e] shadow-md"
+      >
+        🔄 New game
+      </button>
+      <button
+        class="btn btn--new absolute top-[78%] z-40 left-[46%] py-2 px-7 rounded-full backdrop-blur-md backdrop-saturate-[100%] bg-[#3b39547e] shadow-md text-white"
+      >
+        🎲 Roll dice
+      </button>
+      <button
+        class="btn btn--new absolute top-[68%] z-40 left-[47%] py-2 px-6 rounded-full backdrop-blur-md backdrop-saturate-[100%] bg-[#3b39547e]  shadow-md text-white"
+      >
+        📥 Hold
+      </button>
+    </div>
+  </body>
+</html>
