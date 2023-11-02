@@ -22,52 +22,56 @@
       <div class="relative flex justify-center items-center">
         <div
           id="player--0"
-          class="w-[500px] h-[600px] bg-[#4f5a87] shadow-lg  rounded-l-xl flex flex-col items-center pt-24"
+          class="w-[500px] h-[600px] bg-[#4f5a87] shadow-lg rounded-l-xl flex flex-col items-center pt-24"
         >
           <h1 class="text-3xl font-medium">PLAYER 1</h1>
-          <h2 class="text-[95px] mt-10 text-[#3b3954]">20</h2>
+          <h2 class="text-[95px] mt-10 text-[#3b3954]" id="score--0">0</h2>
 
           <div
             class="bg-[#3b3954] w-60 h-32 mt-16 flex flex-col items-center text-white rounded-xl shadow-xl"
           >
             <p class="mt-5">CURRENT</p>
-            <h2 class="text-5xl pt-3 ">0</h2>
+            <h2 class="text-5xl pt-3" id="current--0">0</h2>
           </div>
         </div>
 
         <div
           id="player--1"
-          class="w-[500px] h-[600px] bg-[#8080a7] shadow-lg  rounded-r-xl flex flex-col items-center pt-24"
+          class="w-[500px] h-[600px] bg-[#8080a7] shadow-lg rounded-r-xl flex flex-col items-center pt-24"
         >
           <h1 class="text-3xl font-medium">PLAYER 2</h1>
-          <h2 class="text-[95px] mt-10 text-[#3b3954]">20</h2>
+          <h2 class="text-[95px] mt-10 text-[#3b3954]" id="score--1">0</h2>
 
           <div
             class="bg-[#3b3954] w-60 h-32 mt-16 flex flex-col items-center text-white rounded-xl shadow-xl"
           >
             <p class="mt-5">CURRENT</p>
-            <h2 class="text-5xl pt-3">0</h2>
+            <h2 class="text-5xl pt-3" id="current--1">0</h2>
           </div>
         </div>
-        <div
-          class="absolute w-36 h-36 top-40 left-[42%] shadow-2xl rounded-3xl"
-        >
-          <img src="./public/img/dice (2).png" alt="" class="" />
-        </div>
+
+        <img
+          src=""
+          alt=""
+          id="img-dice"
+          class="images absolute w-36 h-36 top-40 left-[42%] shadow-2xl rounded-3xl"
+        />
       </div>
 
       <button
-        class="btn btn--new absolute bottom-[78%] z-40 left-[45%] py-2 px-7 rounded-full backdrop-blur-md backdrop-saturate-[100%] bg-[#3b39547e] shadow-md"
+        class="btn btn--new absolute bottom-[78%] z-40 left-[45%] py-3 px-7 rounded-full backdrop-blur-md backdrop-saturate-[100%] bg-[#3b39547e] shadow-md text-white"
       >
         🔄 New game
       </button>
+
       <button
-        class="btn btn--new absolute top-[78%] z-40 left-[46%] py-2 px-7 rounded-full backdrop-blur-md backdrop-saturate-[100%] bg-[#3b39547e] shadow-md text-white"
+        class="btn btn--roll absolute top-[68%] z-40 left-[45%] py-3 px-7 rounded-full backdrop-blur-md backdrop-saturate-[100%] bg-[#3b39547e] shadow-md text-white"
       >
         🎲 Roll dice
       </button>
+
       <button
-        class="btn btn--new absolute top-[68%] z-40 left-[47%] py-2 px-6 rounded-full backdrop-blur-md backdrop-saturate-[100%] bg-[#3b39547e]  shadow-md text-white"
+        class="btn btn--hold absolute top-[78%] z-40 left-[46%] py-3 px-7 rounded-full backdrop-blur-md backdrop-saturate-[100%] bg-[#3b39547e] shadow-md text-white"
       >
         📥 Hold
       </button>
